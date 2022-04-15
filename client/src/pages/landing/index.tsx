@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../../components/ui/Logo';
 import main from '../../assets/images/main.svg'
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
     return (
@@ -22,10 +23,10 @@ const LandingPage = () => {
                         I'm baby wayfarers hoodie next level taiyaki brooklyn cliche blue bottle single-origin coffee chia.
                         Aesthetic post-ironic venmo, quinoa lo-fi tote bag adaptogen everyday carry meggings +1 brunch narwhal.
                     </p>
-                    <button className='cursor-pointer text-white bg-sky-600 border-transparent rounded-md px-[20px] py-[8px] text-lg inline-block max-w-max shadow-lg hover:shadow-2xl hover:bg-sky-800 transition'>
+                    <Link to="/register" className='cursor-pointer text-white bg-sky-600 border-transparent rounded-md px-[20px] py-[8px] text-lg inline-block max-w-max shadow-lg hover:shadow-2xl hover:bg-sky-800 transition'>
                         Login/Register
-                    </button>
-                    
+                    </Link>
+
                 </div>
 
                 <img src={main} alt="landing" className='hidden lg:block lg:object-cover lg:w-full ' />
