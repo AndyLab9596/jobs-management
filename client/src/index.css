@@ -62,4 +62,12 @@
   .min-height {
     min-height: calc(100vh - 96px);
   }
+
+  .btn-inline {
+    @apply cursor-pointer text-white bg-sky-600 border-transparent rounded-md px-[20px] py-[8px] text-lg inline-block max-w-max shadow-lg hover:shadow-2xl hover:bg-sky-800 transition;
+  }
+
+  .btn-full {
+    @apply cursor-pointer text-white bg-sky-600 border-transparent rounded-md px-[20px] py-[8px] text-lg  shadow-lg hover:shadow-2xl hover:bg-sky-800 transition w-full;
+  }
 }

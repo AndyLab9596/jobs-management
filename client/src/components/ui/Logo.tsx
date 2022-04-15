@@ -1,9 +1,13 @@
 import React from 'react';
 import logo from '../../assets/images/logo.svg';
 
-const Logo = () => {
+interface LogoPropsType {
+    className?: any
+}
+
+const Logo: React.FC<LogoPropsType> = ({ className }) => {
     return (
-        <img src={logo} alt='jobify' className='block object-cover border-none' />
+        <img src={logo} alt='jobify' className={`block object-cover border-none ${className}`} />
     )
 }
 
