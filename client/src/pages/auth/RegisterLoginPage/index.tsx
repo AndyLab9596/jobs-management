@@ -35,7 +35,6 @@ const RegisterLoginPage = () => {
 
     return (
         <div className='flex justify-center items-center min-height'>
-
             <Form
                 defaultValues={initialValues}
                 validationSchema={validationSchema}
