@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap");
+
+@layer base {
+  body {
+    @apply bg-gray-200 font-mono font-normal leading-relaxed text-gray-700;
+  }
+
+  p {
+    @apply mb-6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply m-0 mb-5 font-sans font-normal leading-tight capitalize tracking-wider;
+  }
+
+  h1 {
+    @apply mt-0 text-5xl;
+  }
+
+  h2 {
+    @apply text-4xl;
+  }
+
+  h3 {
+    @apply text-3xl;
+  }
+
+  h4 {
+    @apply text-2xl;
+  }
+
+  h5 {
+    @apply text-xl;
+  }
+
+  a {
+    @apply no-underline tracking-wider;
+  }
+
+  ul {
+    @apply list-none p-0;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  .custom-container {
+    @apply max-w-7xl w-[90vw] mx-auto;
+  }
+
+  .img {
+    @apply w-full block object-cover;
+  }
+
+  .min-height {
+    min-height: calc(100vh - 96px);
+  }
 }
